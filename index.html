@@ -1974,7 +1974,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1726978966922),
+    lastupdate: new Date(1726980793824),
     sidebar: {
       for_page: ["qgroup","post","category","guide"],
       for_post: ["toc"],
@@ -3017,20 +3017,31 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p>可转换模型 : 采用形式化的数学方法描述系统,并且利用自动化手段,将形式化的需求规格说明,变为可交付使用的系统,适合对安全性,可靠性和保密性要求极高的软件系统,这些系统需要在投入前进行验证<br><img src="/images/02-%E5%8F%AF%E8%BD%AC%E6%8D%A2%E6%A8%A1%E5%9E%8B.png" class="lazyload" data-srcset="/images/02-%E5%8F%AF%E8%BD%AC%E6%8D%A2%E6%A8%A1%E5%9E%8B.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="学习截图未正常显示"></p>
 <p><em>软件开发具有迭代性,是一个创造的过程,不是一个制造的过程</em></p>
 <h1 id="项目开发进程"><a href="#项目开发进程" class="headerlink" title="项目开发进程"></a>项目开发进程</h1><p>我们经过初步的讨论,确定下来需要实现一个线上图书漂流论坛,面向的用户是各大书友,而我在第一次的合作中负责撰写用户需求模块,需求内容如下:</p>
-</div><div class="story post-story"><h2 id="需求描述1-用户的书籍阅读需求"><a href="#需求描述1-用户的书籍阅读需求" class="headerlink" title="需求描述1:用户的书籍阅读需求"></a>需求描述1:用户的书籍阅读需求</h2><p><strong>用户类型</strong>:普通读者</p>
-<p><strong>背景</strong>:用户登录此网站,可以查找自己需求的书籍,并且想要和拥有这本书的书主交换书籍,获取其附加价值</p>
-<h3 id="项目需求"><a href="#项目需求" class="headerlink" title="项目需求"></a>项目需求</h3><ol>
-<li>书籍分类</li>
-<li>书籍导航</li>
-<li>书籍交换</li>
+</div><div class="story post-story"><h2 id="管理员"><a href="#管理员" class="headerlink" title="管理员:"></a>管理员:</h2><h3 id="需求描述1-用户的书籍阅读需求"><a href="#需求描述1-用户的书籍阅读需求" class="headerlink" title="需求描述1:用户的书籍阅读需求"></a>需求描述1:用户的书籍阅读需求</h3><p>用户类型:管理员<br>背景:登入此网站,可以看到每次的交换记录,书籍库内所有信息明细,同时可以管理所有账号的信誉度和封禁状态<br>项目功能需求</p>
+<ol>
+<li>账号管理功能</li>
+<li>信誉系统功能</li>
 </ol>
-</div><div class="story post-story"><h2 id="需求描述2-用户的阅读分享需求"><a href="#需求描述2-用户的阅读分享需求" class="headerlink" title="需求描述2:用户的阅读分享需求"></a>需求描述2:用户的阅读分享需求</h2><p><strong>用户类型</strong>:已经阅读完手头上这本书的读者</p>
-<p><strong>背景</strong>:用户登录此网站,可以查找自己需求的书籍,阅读完已经交换的书之后,想要分享自己的心得</p>
-<h3 id="项目需求-1"><a href="#项目需求-1" class="headerlink" title="项目需求"></a>项目需求</h3><ol>
-<li>书籍心得</li>
+</div><div class="story post-story"><h2 id="会员"><a href="#会员" class="headerlink" title="会员:"></a>会员:</h2><h3 id="需求描述1-用户的书籍阅读需求-1"><a href="#需求描述1-用户的书籍阅读需求-1" class="headerlink" title="需求描述1:用户的书籍阅读需求"></a>需求描述1:用户的书籍阅读需求</h3><p>用户类型:普通读者<br>背景:用户登录此网站,可以查找自己需求的书籍,并且想要和拥有这本书的书主交换书籍,获取其附加价值(经他人之手已经阅读过后的书籍会有他人的阅读痕迹,也许是纸质心得,也许是本图书网站上的电子心得)<br>项目功能需求</p>
+<ol>
+<li>书籍分类功能</li>
+<li>书籍导航模块</li>
+<li>书籍交换模块</li>
+<li>书籍库模块</li>
 </ol>
+<h3 id="需求描述2-用户的阅读分享需求"><a href="#需求描述2-用户的阅读分享需求" class="headerlink" title="需求描述2:用户的阅读分享需求"></a>需求描述2:用户的阅读分享需求</h3><p>用户类型:已经阅读完手头上这本书的读者</p>
+<p>背景:用户登录此网站,可以查找自己需求的书籍,阅读完已经交换的书之后,想要分享自己的心得,分享心得的方式有多种,本网站提供了一个书籍心得分享平台,可供读者撰写自己的读书心得,与原主人分享,也可以通过在归还书籍中夹杂书信的方式分享<br>项目功能需求</p>
+<ol>
+<li>书籍心得分享模块</li>
+</ol>
+</div><div class="story post-story"><h2 id="游客"><a href="#游客" class="headerlink" title="游客:"></a>游客:</h2><h3 id="需求描述1-游客的查看书籍需求"><a href="#需求描述1-游客的查看书籍需求" class="headerlink" title="需求描述1:游客的查看书籍需求"></a>需求描述1:游客的查看书籍需求</h3><p>用户类型:刚进入网站,未注册用户<br>背景:用户登录此网站,可以在未登入情况下查看有哪些书籍<br>项目功能需求</p>
+<ol>
+<li>书籍分类功能</li>
+<li>书籍导航模块</li>
+</ol>
+<p><img src="/images/02-%E8%A1%A8%E6%83%85.gif" class="lazyload" data-srcset="/images/02-%E8%A1%A8%E6%83%85.gif" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="表情&gt;.&lt;"></p>
 <blockquote>
-<p>李文凯 20240919</p>
+<p>作者:李文凯</p>
 </blockquote>
 
 </div>
@@ -3093,7 +3104,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>这是本人在软件开发过程中的学习笔记,将<strong>记录开发</strong>日常所遇到的问题,供自己<strong>日后参考</strong>,并且希望能避免路人踩坑.</p>
 <h1 id="刚开始学习的第一周-还未真正的开始软件开发-暂时只总结了课程知识如下"><a href="#刚开始学习的第一周-还未真正的开始软件开发-暂时只总结了课程知识如下" class="headerlink" title="刚开始学习的第一周,还未真正的开始软件开发,暂时只总结了课程知识如下:"></a>刚开始学习的第一周,还未真正的开始软件开发,暂时只总结了课程知识如下:</h1><p>1.好的软件既要正确(符合用户需求),又要运行正确(能够较为稳定,流畅的运行)<br>2.软件 &#x3D; 程序 + 数据 + 文档<br>3.软件工程方法是为了获得高质量软件而实施的一系列活动<br>4.软件工程的基本目标是更好地维护正在使用的软件产品<br>5.软件工程是将系统性的、规范化的、可定量的方法应用于软件的开发、运行和维护， 即工程化应用到软件上,并且对该方法的研究</p>
 <p>总结来说:<em>软件工程的理论知识是先前开发者经验与智慧的结晶,可以帮助后续开发者们搭建一个更好维护,更加合理的工程结构.</em></p>
-<div class="story post-story"><h2 id="学习截图如下"><a href="#学习截图如下" class="headerlink" title="学习截图如下:"></a>学习截图如下:</h2><p><img src="/images/01-01.jpg" class="lazyload" data-srcset="/images/01-01.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="学习截图未正常显示"><br><img src="/images/01-02.png" class="lazyload" data-srcset="/images/01-02.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="学习截图未正常显示"></p>
+<div class="story post-story"><h2 id="学习截图如下"><a href="#学习截图如下" class="headerlink" title="学习截图如下:"></a>学习截图如下:</h2><p><img src="/images/01-01.jpg" class="lazyload" data-srcset="/images/01-01.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="学习截图未正常显示"><br><img src="/images/01-02.png" class="lazyload" data-srcset="/images/01-02.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="学习截图未正常显示"><br><img src="/images/01-%E8%A1%A8%E6%83%85.gif" class="lazyload" data-srcset="/images/01-%E8%A1%A8%E6%83%85.gif" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="表情&gt;.&lt;"></p>
 <blockquote>
 <blockquote>
 <p>作者:李文凯</p>
@@ -4414,7 +4425,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
 
   <script>
-  let imgs = ["https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/054.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/005.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/001.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/052.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/056.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/034.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/042.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/006.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/038.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/016.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/019.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/004.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/025.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/012.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/033.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/035.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/003.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/039.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/002.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/051.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/046.webp"];
+  let imgs = ["https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/056.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/052.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/005.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/016.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/039.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/001.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/006.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/025.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/034.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/019.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/046.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/035.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/054.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/033.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/004.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/012.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/042.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/003.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/051.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/038.webp","https://unpkg.com/volantis-static@0.0.1654736714924/media/wallpaper/minimalist/2020/002.webp"];
   let index = 0;
   let IntervalParallax = null;
 
