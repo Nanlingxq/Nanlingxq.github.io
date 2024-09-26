@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
-  <link rel="canonical" href="https://nanlingxq.github.io/2024/09/21/软件工程学习笔记02/"/>
+  <link rel="canonical" href="https://nanlingxq.github.io/2024/09/26/软件工程学习笔记03/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -33,19 +33,19 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>软件工程学习笔记02 - Hexo</title>
+  <title>软件工程学习笔记03 - Hexo</title>
   <meta name="keywords" content="null">
   <meta desc name="description" content="This is a rookie's Blog - John Doe - Hexo">
   
 <meta property="og:type" content="article">
-<meta property="og:title" content="软件工程学习笔记02">
-<meta property="og:url" content="https://nanlingxq.github.io/2024/09/21/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B002/index.html">
+<meta property="og:title" content="软件工程学习笔记03">
+<meta property="og:url" content="https://nanlingxq.github.io/2024/09/26/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B003/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="如何保证交付用户满意的产品?保证产品质量的关键在于对软件开发过程进行有效控制1.规定过程实现的方法途径与步骤2.对开发过程进行全方位的检测,保证每一个活动达到应该有的质量 软件过程:1.软件开发活动(1)问题定义  (2)需求开发  (3)软件设计  (4)软件构造  (5)软件测试2.软件开发管理与支持活动(1)软件项目管理计划   (2)配置管理计划  (3)质量保证计划  (4)评审记录 软">
+<meta property="og:description" content="用例建模概念为什么需要用例建模?用例建模有助于描述系统的功能性需求,辅助规划开发用例模型的表示:1.文本描述:(1).概要描述:介绍功能与意义(2).参与者列表:列出相关参与者(3).用例列表:列出相关用例2.用例图描述:描述参与的有哪些用户,哪些用例,以及它们之间的关系,例如优先级(以下为示例)用例图中的主要元素如下:用例表示系统为参与者提供的服务与价值用例命名:动宾结构,且是服务于参与者,需要">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-<meta property="article:published_time" content="2024-09-21T07:27:21.000Z">
-<meta property="article:modified_time" content="2024-09-23T00:21:33.492Z">
+<meta property="article:published_time" content="2024-09-26T08:35:21.000Z">
+<meta property="article:modified_time" content="2024-09-26T11:21:25.251Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
@@ -2969,7 +2969,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
 <div id="l_main" class=''>
   <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
-  <link itemprop="mainEntityOfPage" href="https://nanlingxq.github.io/2024/09/21/软件工程学习笔记02/">
+  <link itemprop="mainEntityOfPage" href="https://nanlingxq.github.io/2024/09/26/软件工程学习笔记03/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Hexo">
   </span>
@@ -2990,7 +2990,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       <h1 class="title" itemprop="name headline">
-        软件工程学习笔记02
+        软件工程学习笔记03
       </h1>
       <div class='new-meta-box'>
         
@@ -3011,10 +3011,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
         
           
-            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2024-09-21T15:27:21+08:00">
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2024-09-26T16:35:21+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：Sep 21, 2024</p>
+    <p>发布于：Sep 26, 2024</p>
   </a>
 </div>
 
@@ -3030,36 +3030,23 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <h1 id="如何保证交付用户满意的产品"><a href="#如何保证交付用户满意的产品" class="headerlink" title="如何保证交付用户满意的产品?"></a>如何保证交付用户满意的产品?</h1><div class="story post-story"><h2 id="保证产品质量的关键在于对软件开发过程进行有效控制"><a href="#保证产品质量的关键在于对软件开发过程进行有效控制" class="headerlink" title="保证产品质量的关键在于对软件开发过程进行有效控制"></a>保证产品质量的关键在于对软件开发过程进行有效控制</h2><p>1.规定过程实现的方法途径与步骤<br>2.对开发过程进行全方位的检测,保证每一个活动达到应该有的质量</p>
-</div><div class="story post-story"><h2 id="软件过程"><a href="#软件过程" class="headerlink" title="软件过程:"></a>软件过程:</h2><p>1.软件开发活动<br>(1)问题定义  (2)需求开发  (3)软件设计  (4)软件构造  (5)软件测试<br>2.软件开发管理与支持活动<br>(1)软件项目管理计划   (2)配置管理计划  (3)质量保证计划  (4)评审记录</p>
-<h1 id="软件过程模型"><a href="#软件过程模型" class="headerlink" title="软件过程模型:"></a>软件过程模型:</h1><p>瀑布模型 : 缺少对变化的适应,在软件测试阶段发现的产品软件定义,设计,构造缺陷已经非常难以更改,各个阶段之间完全固定,产生大量文档,增加了开发过程工作量,只适用于在开发初期就能够确定软件需求的软件项目,且要求用户使用环境稳定<br><img src="/images/02-%E7%80%91%E5%B8%83%E6%A8%A1%E5%9E%8B01.png" class="lazyload" data-srcset="/images/02-%E7%80%91%E5%B8%83%E6%A8%A1%E5%9E%8B01.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="学习截图未正常显示"><br><img src="/images/02-%E7%80%91%E5%B8%83%E6%A8%A1%E5%9E%8B02.png" class="lazyload" data-srcset="/images/02-%E7%80%91%E5%B8%83%E6%A8%A1%E5%9E%8B02.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="学习截图未正常显示"></p>
-<p>原型化模型 : 迅速建造一个可运行的软件原型,使用户与开发人员对系统相关方面进行检查,以决定是否合适和恰当,适用于客户需求难以定义的情况(快速原型法原型搭建快,而不是整个项目快)<br><img src="/images/02-%E5%8E%9F%E5%9E%8B%E5%8C%96%E6%A8%A1%E5%9E%8B.png" class="lazyload" data-srcset="/images/02-%E5%8E%9F%E5%9E%8B%E5%8C%96%E6%A8%A1%E5%9E%8B.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="学习截图未正常显示"></p>
-<p>迭代式开发 : 增量模型(每次完成一小部分,开发速度块,但是适用于已经处于使用的软件开发,每一个release之间算是一个增量模型),迭代模型(先搞出整体结构与轮廓)<br><img src="/images/02-%E5%A2%9E%E9%87%8F%E6%A8%A1%E5%9E%8B%E4%B8%8E%E8%BF%AD%E4%BB%A3%E6%A8%A1%E5%9E%8B%E5%8C%BA%E5%88%AB.png" class="lazyload" data-srcset="/images/02-%E5%A2%9E%E9%87%8F%E6%A8%A1%E5%9E%8B%E4%B8%8E%E8%BF%AD%E4%BB%A3%E6%A8%A1%E5%9E%8B%E5%8C%BA%E5%88%AB.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="学习截图未正常显示"><br><img src="/images/02-%E5%A2%9E%E9%87%8F%E6%A8%A1%E5%9E%8B%E4%B8%8E%E8%BF%AD%E4%BB%A3%E6%A8%A1%E5%9E%8B%E5%8C%BA%E5%88%AB02.png" class="lazyload" data-srcset="/images/02-%E5%A2%9E%E9%87%8F%E6%A8%A1%E5%9E%8B%E4%B8%8E%E8%BF%AD%E4%BB%A3%E6%A8%A1%E5%9E%8B%E5%8C%BA%E5%88%AB02.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="学习截图未正常显示"></p>
-<p>可转换模型 : 采用形式化的数学方法描述系统,并且利用自动化手段,将形式化的需求规格说明,变为可交付使用的系统,适合对安全性,可靠性和保密性要求极高的软件系统,这些系统需要在投入前进行验证<br><img src="/images/02-%E5%8F%AF%E8%BD%AC%E6%8D%A2%E6%A8%A1%E5%9E%8B.png" class="lazyload" data-srcset="/images/02-%E5%8F%AF%E8%BD%AC%E6%8D%A2%E6%A8%A1%E5%9E%8B.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="学习截图未正常显示"></p>
-<p><em>软件开发具有迭代性,是一个创造的过程,不是一个制造的过程</em></p>
-<h1 id="项目开发进程"><a href="#项目开发进程" class="headerlink" title="项目开发进程"></a>项目开发进程</h1><p>我们经过初步的讨论,确定下来需要实现一个线上图书漂流论坛,面向的用户是各大书友,而我在第一次的合作中负责撰写用户需求模块,需求内容如下:</p>
-</div><div class="story post-story"><h2 id="管理员"><a href="#管理员" class="headerlink" title="管理员:"></a>管理员:</h2><h3 id="需求描述1-用户的书籍阅读需求"><a href="#需求描述1-用户的书籍阅读需求" class="headerlink" title="需求描述1:用户的书籍阅读需求"></a>需求描述1:用户的书籍阅读需求</h3><p>用户类型:管理员<br>背景:登入此网站,可以看到每次的交换记录,书籍库内所有信息明细,同时可以管理所有账号的信誉度和封禁状态<br>项目功能需求</p>
-<ol>
-<li>账号管理功能</li>
-<li>信誉系统功能</li>
-</ol>
-</div><div class="story post-story"><h2 id="会员"><a href="#会员" class="headerlink" title="会员:"></a>会员:</h2><h3 id="需求描述1-用户的书籍阅读需求-1"><a href="#需求描述1-用户的书籍阅读需求-1" class="headerlink" title="需求描述1:用户的书籍阅读需求"></a>需求描述1:用户的书籍阅读需求</h3><p>用户类型:普通读者<br>背景:用户登录此网站,可以查找自己需求的书籍,并且想要和拥有这本书的书主交换书籍,获取其附加价值(经他人之手已经阅读过后的书籍会有他人的阅读痕迹,也许是纸质心得,也许是本图书网站上的电子心得)<br>项目功能需求</p>
-<ol>
-<li>书籍分类功能</li>
-<li>书籍导航模块</li>
-<li>书籍交换模块</li>
-<li>书籍库模块</li>
-</ol>
-<h3 id="需求描述2-用户的阅读分享需求"><a href="#需求描述2-用户的阅读分享需求" class="headerlink" title="需求描述2:用户的阅读分享需求"></a>需求描述2:用户的阅读分享需求</h3><p>用户类型:已经阅读完手头上这本书的读者</p>
-<p>背景:用户登录此网站,可以查找自己需求的书籍,阅读完已经交换的书之后,想要分享自己的心得,分享心得的方式有多种,本网站提供了一个书籍心得分享平台,可供读者撰写自己的读书心得,与原主人分享,也可以通过在归还书籍中夹杂书信的方式分享<br>项目功能需求</p>
-<ol>
-<li>书籍心得分享模块</li>
-</ol>
-</div><div class="story post-story"><h2 id="游客"><a href="#游客" class="headerlink" title="游客:"></a>游客:</h2><h3 id="需求描述1-游客的查看书籍需求"><a href="#需求描述1-游客的查看书籍需求" class="headerlink" title="需求描述1:游客的查看书籍需求"></a>需求描述1:游客的查看书籍需求</h3><p>用户类型:刚进入网站,未注册用户<br>背景:用户登录此网站,可以在未登入情况下查看有哪些书籍<br>项目功能需求</p>
-<ol>
-<li>书籍分类功能</li>
-<li>书籍导航模块</li>
-</ol>
+    <div class="story post-story"><h2 id="用例建模概念"><a href="#用例建模概念" class="headerlink" title="用例建模概念"></a>用例建模概念</h2><p>为什么需要用例建模?<br>用例建模有助于描述系统的功能性需求,辅助规划开发<br>用例模型的表示:<br>1.文本描述:<br>(1).概要描述:介绍功能与意义<br>(2).参与者列表:列出相关参与者<br>(3).用例列表:列出相关用例<br>2.用例图描述:描述参与的有哪些用户,哪些用例,以及它们之间的关系,例如优先级(以下为示例)<br><img src="/images/03-%E7%94%A8%E4%BE%8B%E5%9B%BE%E5%BD%A2%E5%9B%BE%E4%BE%8B%E8%AF%B4%E6%98%8E.png" class="lazyload" data-srcset="/images/03-%E7%94%A8%E4%BE%8B%E5%9B%BE%E5%BD%A2%E5%9B%BE%E4%BE%8B%E8%AF%B4%E6%98%8E.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="示例图"><br>用例图中的主要元素如下:<br><img src="/images/03-%E7%94%A8%E4%BE%8B%E5%9B%BE%E4%B8%AD%E4%B8%BB%E8%A6%81%E5%85%83%E7%B4%A0.png" class="lazyload" data-srcset="/images/03-%E7%94%A8%E4%BE%8B%E5%9B%BE%E4%B8%AD%E4%B8%BB%E8%A6%81%E5%85%83%E7%B4%A0.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="示例图"><br>用例表示系统为参与者提供的服务与价值<br>用例命名:动宾结构,且是服务于参与者,需要为参与者提供价值,粒度不宜过细<br>参与者命名需要体现出角色特性<br>箭头的关联指出是谁发起的交互,没有箭头表示双方都是可以发起交互的</p>
+</div><div class="story post-story"><h2 id="用例建模过程"><a href="#用例建模过程" class="headerlink" title="用例建模过程"></a>用例建模过程</h2><h3 id="第一步-找到所有参与者和用例"><a href="#第一步-找到所有参与者和用例" class="headerlink" title="第一步:找到所有参与者和用例"></a>第一步:找到所有参与者和用例</h3><ul>
+<li>识别出参与者并且做简单的描述</li>
+<li>识别出用例并做简单的介绍</li>
+</ul>
+<h3 id="第二步-编写用例"><a href="#第二步-编写用例" class="headerlink" title="第二步:编写用例"></a>第二步:编写用例</h3><ul>
+<li>给用例事件流程划分重要等级</li>
+<li>按照重要程度排序详细描述事件流程</li>
+</ul>
+<h3 id="模板"><a href="#模板" class="headerlink" title="模板:"></a>模板:</h3><p><img src="/images/03-%E7%94%A8%E4%BE%8B%E6%96%87%E6%A1%A3%E6%A8%A1%E6%9D%BF.png" class="lazyload" data-srcset="/images/03-%E7%94%A8%E4%BE%8B%E6%96%87%E6%A1%A3%E6%A8%A1%E6%9D%BF.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="模板"></p>
+<h3 id="详细用例约束的例子"><a href="#详细用例约束的例子" class="headerlink" title="详细用例约束的例子"></a>详细用例约束的例子</h3><p><img src="/images/03-%E7%94%A8%E4%BE%8B%E7%BA%A6%E6%9D%9F%E7%9A%84%E4%BE%8B%E5%AD%90.png" class="lazyload" data-srcset="/images/03-%E7%94%A8%E4%BE%8B%E7%BA%A6%E6%9D%9F%E7%9A%84%E4%BE%8B%E5%AD%90.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="模板"></p>
+<p>重要环节:</p>
+<ul>
+<li>明确系统边界:系统边界指一个系统所包含的所有系统成分与系统以外所有事物的分界线</li>
+<li>用例定义为功能分解的区分:用例定义中非常需要上下文语境信息,而功能分解则是将问题分解成粒度较小,独立的部分,通常一些功能分解没有实际的意义<br>例子:<img src="/images/03-%E5%8A%9F%E8%83%BD%E5%88%86%E8%A7%A3%E4%BE%8B%E5%AD%90.png" class="lazyload" data-srcset="/images/03-%E5%8A%9F%E8%83%BD%E5%88%86%E8%A7%A3%E4%BE%8B%E5%AD%90.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="模板"> <img src="/images/03-%E6%AD%A3%E7%A1%AE%E7%94%A8%E4%BE%8B%E5%BB%BA%E6%A8%A1%E4%BE%8B%E5%AD%90.png" class="lazyload" data-srcset="/images/03-%E6%AD%A3%E7%A1%AE%E7%94%A8%E4%BE%8B%E5%BB%BA%E6%A8%A1%E4%BE%8B%E5%AD%90.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="模板"> <img src="/images/03-%E9%81%BF%E5%85%8D%E5%8A%9F%E8%83%BD%E6%80%A7%E5%88%86%E8%A7%A3.png" class="lazyload" data-srcset="/images/03-%E9%81%BF%E5%85%8D%E5%8A%9F%E8%83%BD%E6%80%A7%E5%88%86%E8%A7%A3.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="模板"> </li>
+<li>用例图中的主要图标<br><img src="/images/03-%E7%94%A8%E4%BE%8B%E5%9B%BE%E4%B8%AD%E7%9A%84%E4%B8%BB%E8%A6%81%E5%9B%BE%E6%A0%87.png" class="lazyload" data-srcset="/images/03-%E7%94%A8%E4%BE%8B%E5%9B%BE%E4%B8%AD%E7%9A%84%E4%B8%BB%E8%A6%81%E5%9B%BE%E6%A0%87.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="模板"></li>
+</ul>
 <p><img src="/images/02-%E8%A1%A8%E6%83%85.gif" class="lazyload" data-srcset="/images/02-%E8%A1%A8%E6%83%85.gif" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="表情&gt;.&lt;"></p>
 <blockquote>
 <p>作者:李文凯</p>
@@ -3089,10 +3076,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-09-23T08:21:33+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-09-26T19:21:25+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>本页文档最后更新于：Sep 23, 2024</p>
+    <p>本页文档最后更新于：Sep 26, 2024</p>
   </a>
 </div>
 
@@ -3111,7 +3098,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://nanlingxq.github.io/2024/09/21/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B002/&title=软件工程学习笔记02 - Hexo&summary="
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://nanlingxq.github.io/2024/09/26/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B003/&title=软件工程学习笔记03 - Hexo&summary="
           
           >
           
@@ -3123,7 +3110,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://nanlingxq.github.io/2024/09/21/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B002/&title=软件工程学习笔记02 - Hexo&summary="
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://nanlingxq.github.io/2024/09/26/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B003/&title=软件工程学习笔记03 - Hexo&summary="
           
           >
           
@@ -3135,7 +3122,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=https://nanlingxq.github.io/2024/09/21/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B002/&title=软件工程学习笔记02 - Hexo&summary="
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://nanlingxq.github.io/2024/09/26/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B003/&title=软件工程学习笔记03 - Hexo&summary="
           
           >
           
@@ -3168,16 +3155,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class="prev-next">
       
-        <a class='prev' href='/2024/09/26/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B003/'>
-          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>软件工程学习笔记03</p>
-          <p class='content'>用例建模概念为什么需要用例建模?用例建模有助于描述系统的功能性需求,辅助规划开发用例模型的表示:1.文本描述:(1).概要描述:介绍功能与意义(2).参与者列表:列出相关参与者(3).用例列表:...</p>
-        </a>
       
-      
-        <a class='next' href='/2024/09/13/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B001/'>
-          <p class='title'>软件工程学习笔记01<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>前言这是本人在软件开发过程中的学习笔记,将记录开发日常所遇到的问题,供自己日后参考,并且希望能避免路人踩坑.
-刚开始学习的第一周,还未真正的开始软件开发,暂时只总结了课程知识如下:1.好的软件既...</p>
+        <a class='next' href='/2024/09/21/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B002/'>
+          <p class='title'>软件工程学习笔记02<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>如何保证交付用户满意的产品?保证产品质量的关键在于对软件开发过程进行有效控制1.规定过程实现的方法途径与步骤2.对开发过程进行全方位的检测,保证每一个活动达到应该有的质量
+软件过程:1.软件开发...</p>
         </a>
       
     </div>
@@ -3193,7 +3175,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <article class="post white-box shadow floatable blur" id="comments">
     <span hidden>
-      <meta itemprop="discussionUrl" content="/2024/09/21/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B002/index.html#comments">
+      <meta itemprop="discussionUrl" content="/2024/09/26/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B003/index.html#comments">
     </span>
     <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
@@ -3235,7 +3217,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BF%9D%E8%AF%81%E4%BA%A7%E5%93%81%E8%B4%A8%E9%87%8F%E7%9A%84%E5%85%B3%E9%94%AE%E5%9C%A8%E4%BA%8E%E5%AF%B9%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E8%BF%87%E7%A8%8B%E8%BF%9B%E8%A1%8C%E6%9C%89%E6%95%88%E6%8E%A7%E5%88%B6"><span class="toc-number">1.</span> <span class="toc-text">保证产品质量的关键在于对软件开发过程进行有效控制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BD%AF%E4%BB%B6%E8%BF%87%E7%A8%8B"><span class="toc-number">2.</span> <span class="toc-text">软件过程:</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AE%A1%E7%90%86%E5%91%98"><span class="toc-number">3.</span> <span class="toc-text">管理员:</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9C%80%E6%B1%82%E6%8F%8F%E8%BF%B01-%E7%94%A8%E6%88%B7%E7%9A%84%E4%B9%A6%E7%B1%8D%E9%98%85%E8%AF%BB%E9%9C%80%E6%B1%82"><span class="toc-number">3.1.</span> <span class="toc-text">需求描述1:用户的书籍阅读需求</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BC%9A%E5%91%98"><span class="toc-number">4.</span> <span class="toc-text">会员:</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9C%80%E6%B1%82%E6%8F%8F%E8%BF%B01-%E7%94%A8%E6%88%B7%E7%9A%84%E4%B9%A6%E7%B1%8D%E9%98%85%E8%AF%BB%E9%9C%80%E6%B1%82-1"><span class="toc-number">4.1.</span> <span class="toc-text">需求描述1:用户的书籍阅读需求</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9C%80%E6%B1%82%E6%8F%8F%E8%BF%B02-%E7%94%A8%E6%88%B7%E7%9A%84%E9%98%85%E8%AF%BB%E5%88%86%E4%BA%AB%E9%9C%80%E6%B1%82"><span class="toc-number">4.2.</span> <span class="toc-text">需求描述2:用户的阅读分享需求</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B8%B8%E5%AE%A2"><span class="toc-number">5.</span> <span class="toc-text">游客:</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9C%80%E6%B1%82%E6%8F%8F%E8%BF%B01-%E6%B8%B8%E5%AE%A2%E7%9A%84%E6%9F%A5%E7%9C%8B%E4%B9%A6%E7%B1%8D%E9%9C%80%E6%B1%82"><span class="toc-number">5.1.</span> <span class="toc-text">需求描述1:游客的查看书籍需求</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%A8%E4%BE%8B%E5%BB%BA%E6%A8%A1%E6%A6%82%E5%BF%B5"><span class="toc-number">1.</span> <span class="toc-text">用例建模概念</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%A8%E4%BE%8B%E5%BB%BA%E6%A8%A1%E8%BF%87%E7%A8%8B"><span class="toc-number">2.</span> <span class="toc-text">用例建模过程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E6%AD%A5-%E6%89%BE%E5%88%B0%E6%89%80%E6%9C%89%E5%8F%82%E4%B8%8E%E8%80%85%E5%92%8C%E7%94%A8%E4%BE%8B"><span class="toc-number">2.1.</span> <span class="toc-text">第一步:找到所有参与者和用例</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E6%AD%A5-%E7%BC%96%E5%86%99%E7%94%A8%E4%BE%8B"><span class="toc-number">2.2.</span> <span class="toc-text">第二步:编写用例</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A8%A1%E6%9D%BF"><span class="toc-number">2.3.</span> <span class="toc-text">模板:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AF%A6%E7%BB%86%E7%94%A8%E4%BE%8B%E7%BA%A6%E6%9D%9F%E7%9A%84%E4%BE%8B%E5%AD%90"><span class="toc-number">2.4.</span> <span class="toc-text">详细用例约束的例子</span></a></li></ol></li></ol>
     </div>
   </section>
 
@@ -4693,7 +4675,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Hexo","url":"https://nanlingxq.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://nanlingxq.github.io/","sameAs":["https://github.com/volantis-x"],"description":"This is a rookie's Blog"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://nanlingxq.github.io/","name":"Hexo"}},{"@type":"ListItem","position":3,"item":{"@id":"https://nanlingxq.github.io/2024/09/21/软件工程学习笔记02/","name":"软件工程学习笔记02"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Hexo","url":"https://nanlingxq.github.io/","keywords":null,"description":"This is a rookie's Blog","author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://nanlingxq.github.io/","description":"This is a rookie's Blog"},"publisher":{"@type":"Organization","name":"Hexo","url":"https://nanlingxq.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://nanlingxq.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"软件工程学习笔记02","description":"This is a rookie's Blog","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https://nanlingxq.github.io/2024/09/21/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B002/"},"author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://nanlingxq.github.io/"},"publisher":{"@type":"Organization","name":"Hexo","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://nanlingxq.github.io/2024/09/21/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B002/","wordCount":0,"datePublished":"2024-09-21T07:27:21.000Z","dateModified":"2024-09-23T00:21:33.492Z","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Hexo","url":"https://nanlingxq.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://nanlingxq.github.io/","sameAs":["https://github.com/volantis-x"],"description":"This is a rookie's Blog"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://nanlingxq.github.io/","name":"Hexo"}},{"@type":"ListItem","position":3,"item":{"@id":"https://nanlingxq.github.io/2024/09/26/软件工程学习笔记03/","name":"软件工程学习笔记03"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Hexo","url":"https://nanlingxq.github.io/","keywords":null,"description":"This is a rookie's Blog","author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://nanlingxq.github.io/","description":"This is a rookie's Blog"},"publisher":{"@type":"Organization","name":"Hexo","url":"https://nanlingxq.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://nanlingxq.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"软件工程学习笔记03","description":"This is a rookie's Blog","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https://nanlingxq.github.io/2024/09/26/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B003/"},"author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://nanlingxq.github.io/"},"publisher":{"@type":"Organization","name":"Hexo","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://nanlingxq.github.io/2024/09/26/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B003/","wordCount":0,"datePublished":"2024-09-26T08:35:21.000Z","dateModified":"2024-09-26T11:21:25.251Z","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
