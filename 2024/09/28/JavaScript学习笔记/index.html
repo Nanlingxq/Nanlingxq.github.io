@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
-  <link rel="canonical" href="https://nanlingxq.github.io/2024/09/26/软件工程学习笔记03/"/>
+  <link rel="canonical" href="https://nanlingxq.github.io/2024/09/28/javascript学习笔记/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -33,19 +33,19 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>软件工程学习笔记03 - Hexo</title>
+  <title>JavaScript学习笔记 - Hexo</title>
   <meta name="keywords" content="null">
   <meta desc name="description" content="This is a rookie's Blog - John Doe - Hexo">
   
 <meta property="og:type" content="article">
-<meta property="og:title" content="软件工程学习笔记03">
-<meta property="og:url" content="https://nanlingxq.github.io/2024/09/26/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B003/index.html">
+<meta property="og:title" content="JavaScript学习笔记">
+<meta property="og:url" content="https://nanlingxq.github.io/2024/09/28/JavaScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="用例建模概念为什么需要用例建模?用例建模有助于描述系统的功能性需求,辅助规划开发用例模型的表示: 1.文本描述:(1).概要描述:介绍功能与意义(2).参与者列表:列出相关参与者(3).用例列表:列出相关用例 2.用例图描述:描述参与的有哪些用户,哪些用例,以及它们之间的关系,例如优先级(以下为示例)用例图中的主要元素如下:用例表示系统为参与者提供的服务与价值用例命名:动宾结构,且是服务于参与者,">
+<meta property="og:description" content="JS组成JavaScript &#x3D; ECMAScript(JS语言基础) + Web APIs(DOM + BOM) 123ECMAScript:规定了JS的基础语法,如变量,分支,循环...DOM(操作文档):页面元素的删除,大小控制以及移动等操作BOM(操作浏览器):页面弹窗,数据存储到浏览器等  JS书写位置 内部JS写在HTML文件中,用&lt;JavaScript&gt;标签标注">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-<meta property="article:published_time" content="2024-09-26T08:35:21.000Z">
-<meta property="article:modified_time" content="2024-09-26T11:26:40.019Z">
+<meta property="article:published_time" content="2024-09-28T03:14:02.292Z">
+<meta property="article:modified_time" content="2024-09-29T12:25:55.736Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
@@ -2969,7 +2969,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
 <div id="l_main" class=''>
   <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
-  <link itemprop="mainEntityOfPage" href="https://nanlingxq.github.io/2024/09/26/软件工程学习笔记03/">
+  <link itemprop="mainEntityOfPage" href="https://nanlingxq.github.io/2024/09/28/JavaScript学习笔记/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Hexo">
   </span>
@@ -2990,7 +2990,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       <h1 class="title" itemprop="name headline">
-        软件工程学习笔记03
+        JavaScript学习笔记
       </h1>
       <div class='new-meta-box'>
         
@@ -3011,10 +3011,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
         
           
-            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2024-09-26T16:35:21+08:00">
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2024-09-28T11:14:02+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：Sep 26, 2024</p>
+    <p>发布于：Sep 28, 2024</p>
   </a>
 </div>
 
@@ -3030,29 +3030,36 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <div class="story post-story"><h2 id="用例建模概念"><a href="#用例建模概念" class="headerlink" title="用例建模概念"></a>用例建模概念</h2><p>为什么需要用例建模?<br>用例建模有助于描述系统的功能性需求,辅助规划开发<br>用例模型的表示:</p>
-<h3 id="1-文本描述"><a href="#1-文本描述" class="headerlink" title="1.文本描述:"></a>1.文本描述:</h3><p>(1).概要描述:介绍功能与意义<br>(2).参与者列表:列出相关参与者<br>(3).用例列表:列出相关用例</p>
-<h3 id="2-用例图描述-描述参与的有哪些用户-哪些用例-以及它们之间的关系-例如优先级-以下为示例"><a href="#2-用例图描述-描述参与的有哪些用户-哪些用例-以及它们之间的关系-例如优先级-以下为示例" class="headerlink" title="2.用例图描述:描述参与的有哪些用户,哪些用例,以及它们之间的关系,例如优先级(以下为示例)"></a>2.用例图描述:描述参与的有哪些用户,哪些用例,以及它们之间的关系,例如优先级(以下为示例)</h3><p><img src="/images/03-%E7%94%A8%E4%BE%8B%E5%9B%BE%E5%BD%A2%E5%9B%BE%E4%BE%8B%E8%AF%B4%E6%98%8E.png" class="lazyload" data-srcset="/images/03-%E7%94%A8%E4%BE%8B%E5%9B%BE%E5%BD%A2%E5%9B%BE%E4%BE%8B%E8%AF%B4%E6%98%8E.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="示例图"><br>用例图中的主要元素如下:<br><img src="/images/03-%E7%94%A8%E4%BE%8B%E5%9B%BE%E4%B8%AD%E4%B8%BB%E8%A6%81%E5%85%83%E7%B4%A0.png" class="lazyload" data-srcset="/images/03-%E7%94%A8%E4%BE%8B%E5%9B%BE%E4%B8%AD%E4%B8%BB%E8%A6%81%E5%85%83%E7%B4%A0.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="示例图"><br>用例表示系统为参与者提供的服务与价值<br>用例命名:动宾结构,且是服务于参与者,需要为参与者提供价值,粒度不宜过细<br>参与者命名需要体现出角色特性<br>箭头的关联指出是谁发起的交互,没有箭头表示双方都是可以发起交互的</p>
-</div><div class="story post-story"><h2 id="用例建模过程"><a href="#用例建模过程" class="headerlink" title="用例建模过程"></a>用例建模过程</h2><h3 id="第一步-找到所有参与者和用例"><a href="#第一步-找到所有参与者和用例" class="headerlink" title="第一步:找到所有参与者和用例"></a>第一步:找到所有参与者和用例</h3><ul>
-<li>识别出参与者并且做简单的描述</li>
-<li>识别出用例并做简单的介绍</li>
-</ul>
-<h3 id="第二步-编写用例"><a href="#第二步-编写用例" class="headerlink" title="第二步:编写用例"></a>第二步:编写用例</h3><ul>
-<li>给用例事件流程划分重要等级</li>
-<li>按照重要程度排序详细描述事件流程</li>
-</ul>
-<h3 id="模板"><a href="#模板" class="headerlink" title="模板:"></a>模板:</h3><p><img src="/images/03-%E7%94%A8%E4%BE%8B%E6%96%87%E6%A1%A3%E6%A8%A1%E6%9D%BF.png" class="lazyload" data-srcset="/images/03-%E7%94%A8%E4%BE%8B%E6%96%87%E6%A1%A3%E6%A8%A1%E6%9D%BF.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="模板"></p>
-<h3 id="详细用例约束的例子"><a href="#详细用例约束的例子" class="headerlink" title="详细用例约束的例子"></a>详细用例约束的例子</h3><p><img src="/images/03-%E7%94%A8%E4%BE%8B%E7%BA%A6%E6%9D%9F%E7%9A%84%E4%BE%8B%E5%AD%90.png" class="lazyload" data-srcset="/images/03-%E7%94%A8%E4%BE%8B%E7%BA%A6%E6%9D%9F%E7%9A%84%E4%BE%8B%E5%AD%90.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="模板"></p>
-<h3 id="重要环节"><a href="#重要环节" class="headerlink" title="重要环节:"></a>重要环节:</h3><ul>
-<li>明确系统边界:系统边界指一个系统所包含的所有系统成分与系统以外所有事物的分界线</li>
-<li>用例定义为功能分解的区分:用例定义中非常需要上下文语境信息,而功能分解则是将问题分解成粒度较小,独立的部分,通常一些功能分解没有实际的意义<br>例子:<img src="/images/03-%E5%8A%9F%E8%83%BD%E5%88%86%E8%A7%A3%E4%BE%8B%E5%AD%90.png" class="lazyload" data-srcset="/images/03-%E5%8A%9F%E8%83%BD%E5%88%86%E8%A7%A3%E4%BE%8B%E5%AD%90.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="模板"><br> <img src="/images/03-%E6%AD%A3%E7%A1%AE%E7%94%A8%E4%BE%8B%E5%BB%BA%E6%A8%A1%E4%BE%8B%E5%AD%90.png" class="lazyload" data-srcset="/images/03-%E6%AD%A3%E7%A1%AE%E7%94%A8%E4%BE%8B%E5%BB%BA%E6%A8%A1%E4%BE%8B%E5%AD%90.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="模板"><br> <img src="/images/03-%E9%81%BF%E5%85%8D%E5%8A%9F%E8%83%BD%E6%80%A7%E5%88%86%E8%A7%A3.png" class="lazyload" data-srcset="/images/03-%E9%81%BF%E5%85%8D%E5%8A%9F%E8%83%BD%E6%80%A7%E5%88%86%E8%A7%A3.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="模板"> </li>
-<li>用例图中的主要图标<br><img src="/images/03-%E7%94%A8%E4%BE%8B%E5%9B%BE%E4%B8%AD%E7%9A%84%E4%B8%BB%E8%A6%81%E5%9B%BE%E6%A0%87.png" class="lazyload" data-srcset="/images/03-%E7%94%A8%E4%BE%8B%E5%9B%BE%E4%B8%AD%E7%9A%84%E4%B8%BB%E8%A6%81%E5%9B%BE%E6%A0%87.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="模板"></li>
-</ul>
-<p><img src="/images/02-%E8%A1%A8%E6%83%85.gif" class="lazyload" data-srcset="/images/02-%E8%A1%A8%E6%83%85.gif" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="表情&gt;.&lt;"></p>
-<blockquote>
-<p>作者:李文凯</p>
-</blockquote>
+    <h3 id="JS组成"><a href="#JS组成" class="headerlink" title="JS组成"></a>JS组成</h3><p>JavaScript &#x3D; ECMAScript(JS语言基础) + Web APIs(DOM + BOM)</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ECMAScript:规定了JS的基础语法,如变量,分支,循环...</span><br><span class="line">DOM(操作文档):页面元素的删除,大小控制以及移动等操作</span><br><span class="line">BOM(操作浏览器):页面弹窗,数据存储到浏览器等</span><br></pre></td></tr></table></figure>
 
+<div class="story post-story"><h2 id="JS书写位置"><a href="#JS书写位置" class="headerlink" title="JS书写位置"></a>JS书写位置</h2><ol>
+<li><p>内部JS<br>写在HTML文件中,用&lt;JavaScript&gt;标签标注(必须写在的上方)<br><strong>为什么期待JS在HTML文件的底部?因为浏览器会按照代码的顺序加载HTMl,如果先加载的JS希望修改下方的HTML,那么其很可能会因为HTML尚未加载而失效</strong></p>
+</li>
+<li><p>外部JS<br>用以下语句导入外部JS文件:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;script src=&quot;&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure></li>
+<li><p>内联JS</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;button onclick=&quot;alert(&quot;Hello World&quot;)&quot;&gt;点我好事成双&lt;/button&gt;</span><br></pre></td></tr></table></figure></li>
+</ol>
+</div><div class="story post-story"><h2 id="JS基础语法"><a href="#JS基础语法" class="headerlink" title="JS基础语法"></a>JS基础语法</h2><p>注意:<strong>浏览器会先跳过页面渲染,执行alert和prompt</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">alert&lt;&#x27;&#x27;&gt;   ---&gt;  表示于浏览器中弹出警示框</span><br><span class="line">//          ---&gt;  表示单行注释(ctrl + /)</span><br><span class="line">/* */       ---&gt;  表示块注释(ctrl + alt + a)</span><br><span class="line">;           ---&gt;  表示结束符(可以不加,JS环境能够自行推断)</span><br></pre></td></tr></table></figure>
+<p>文档输出:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">document.write(&#x27;井底之蛙未曾见过大海,却知晓天空之蓝.&#x27;)   </span><br><span class="line">document.write(&#x27;&lt;h1&gt;井底之蛙未曾见过大海,却知晓天空之蓝.&lt;/h1&gt;&#x27;)     ---&gt;    注意标签在引号里面   </span><br></pre></td></tr></table></figure>
+<p>调试输出:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">console.log(&#x27;井底之蛙未曾见过大海,却知晓天空之蓝.&#x27;)     ---&gt;    控制台打印,用于调试</span><br></pre></td></tr></table></figure>
+<p>输入语法:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">prompt(&#x27;请输入:&#x27;)   ---&gt;    显示一个对话框,同时提示用户输入信息,*返回值是用户输入的信息(默认为字符串,后续可能需要进行类型转换)*</span><br></pre></td></tr></table></figure>
+<h3 id="变量"><a href="#变量" class="headerlink" title="变量:"></a>变量:</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">let 变量名      ---&gt;    变量可以同时声明多个,声明的同时也可以赋值,此时叫做初始化</span><br><span class="line">var 变量名      ---&gt;    古早版本中的变量声明,可以重复声明,且先允许使用后声明</span><br><span class="line">let 数组名 = [] ---&gt;    声明一个数组(下标从0开始,可以混合存储,嵌套存储)</span><br><span class="line">数组名.length   ---&gt;    表示获取一个数组的长度(同一级别单位的个数)</span><br><span class="line">const 常量名    ---&gt;    声明一个常量(声明时必须赋值)</span><br></pre></td></tr></table></figure>
+<h3 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型:"></a>数据类型:</h3><p>JavaScript属于弱数据类型语言,变量到底属于哪种类型,只有在赋值之后我们才能确认</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">number         ---&gt;     数字型</span><br><span class="line">string         ---&gt;     字符串型(使用&#x27;&#x27;,&quot;&quot;,``包裹的数据都叫做字符串,&#x27;\&#x27;作为转义字符,&#x27;+&#x27;可以连接多个字符串)</span><br><span class="line">boolean        ---&gt;     布尔型</span><br><span class="line">undefined      ---&gt;     未定义型</span><br><span class="line">null           ---&gt;     空类型  </span><br><span class="line">object         ---&gt;     对象</span><br><span class="line">NaN            ---&gt;     计算错误</span><br></pre></td></tr></table></figure>
+<p>模板字符串:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">console.log(`经年$&#123;h1&#125;碎了`)</span><br></pre></td></tr></table></figure>
+<p>null 与 undefine的区别:<strong>null表示为空,和1相加还是为1,undefine表示为未定义,不知道里面有什么,和1相加为NaN</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">typeof 变量名   ---&gt;    输出这个变量的类型</span><br></pre></td></tr></table></figure>
+<p>当用”+”连接一个字符与一个数字时,数字会被隐式转换为字符</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">console.log(&#x27;2&#x27; + 2)     ---&gt;    在控制台输出22</span><br></pre></td></tr></table></figure>
+<p><strong>在数字字符串前加上一个”+”表示将数据由字符型转换为数字类型</strong><br>强制类型转换:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Number()    ---&gt;    将非数字的字符转化为Number会变成NaN</span><br><span class="line">parselent() ---&gt;    保留整数部分</span><br><span class="line">parseFloat()---&gt;    转换为小数</span><br></pre></td></tr></table></figure>
 </div>
   </div>
   
@@ -3077,10 +3084,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-09-26T19:26:40+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-09-29T20:25:55+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>本页文档最后更新于：Sep 26, 2024</p>
+    <p>本页文档最后更新于：Sep 29, 2024</p>
   </a>
 </div>
 
@@ -3099,7 +3106,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://nanlingxq.github.io/2024/09/26/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B003/&title=软件工程学习笔记03 - Hexo&summary="
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://nanlingxq.github.io/2024/09/28/JavaScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/&title=JavaScript学习笔记 - Hexo&summary="
           
           >
           
@@ -3111,7 +3118,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://nanlingxq.github.io/2024/09/26/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B003/&title=软件工程学习笔记03 - Hexo&summary="
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://nanlingxq.github.io/2024/09/28/JavaScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/&title=JavaScript学习笔记 - Hexo&summary="
           
           >
           
@@ -3123,7 +3130,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=https://nanlingxq.github.io/2024/09/26/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B003/&title=软件工程学习笔记03 - Hexo&summary="
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://nanlingxq.github.io/2024/09/28/JavaScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/&title=JavaScript学习笔记 - Hexo&summary="
           
           >
           
@@ -3156,16 +3163,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class="prev-next">
       
-        <a class='prev' href='/2024/09/28/VUE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/'>
-          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>Vue学习笔记</p>
+      
+        <a class='next' href='/2024/09/28/VUE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/'>
+          <p class='title'>Vue学习笔记<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
           <p class='content'>Vue开发前的准备使用以下两种方式创建Vue项目,前者直接创建,后者先检测是否安装Vue再创建   create-vue   npm init vue@latest输入包名称:   vue一路点...</p>
-        </a>
-      
-      
-        <a class='next' href='/2024/09/21/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B002/'>
-          <p class='title'>软件工程学习笔记02<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>如何保证交付用户满意的产品?保证产品质量的关键在于对软件开发过程进行有效控制1.规定过程实现的方法途径与步骤2.对开发过程进行全方位的检测,保证每一个活动达到应该有的质量
-软件过程:1.软件开发...</p>
         </a>
       
     </div>
@@ -3181,7 +3182,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <article class="post white-box shadow floatable blur" id="comments">
     <span hidden>
-      <meta itemprop="discussionUrl" content="/2024/09/26/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B003/index.html#comments">
+      <meta itemprop="discussionUrl" content="/2024/09/28/JavaScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/index.html#comments">
     </span>
     <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
@@ -3223,7 +3224,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%A8%E4%BE%8B%E5%BB%BA%E6%A8%A1%E6%A6%82%E5%BF%B5"><span class="toc-number">1.</span> <span class="toc-text">用例建模概念</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E6%96%87%E6%9C%AC%E6%8F%8F%E8%BF%B0"><span class="toc-number">1.1.</span> <span class="toc-text">1.文本描述:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E7%94%A8%E4%BE%8B%E5%9B%BE%E6%8F%8F%E8%BF%B0-%E6%8F%8F%E8%BF%B0%E5%8F%82%E4%B8%8E%E7%9A%84%E6%9C%89%E5%93%AA%E4%BA%9B%E7%94%A8%E6%88%B7-%E5%93%AA%E4%BA%9B%E7%94%A8%E4%BE%8B-%E4%BB%A5%E5%8F%8A%E5%AE%83%E4%BB%AC%E4%B9%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB-%E4%BE%8B%E5%A6%82%E4%BC%98%E5%85%88%E7%BA%A7-%E4%BB%A5%E4%B8%8B%E4%B8%BA%E7%A4%BA%E4%BE%8B"><span class="toc-number">1.2.</span> <span class="toc-text">2.用例图描述:描述参与的有哪些用户,哪些用例,以及它们之间的关系,例如优先级(以下为示例)</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%A8%E4%BE%8B%E5%BB%BA%E6%A8%A1%E8%BF%87%E7%A8%8B"><span class="toc-number">2.</span> <span class="toc-text">用例建模过程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E6%AD%A5-%E6%89%BE%E5%88%B0%E6%89%80%E6%9C%89%E5%8F%82%E4%B8%8E%E8%80%85%E5%92%8C%E7%94%A8%E4%BE%8B"><span class="toc-number">2.1.</span> <span class="toc-text">第一步:找到所有参与者和用例</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E6%AD%A5-%E7%BC%96%E5%86%99%E7%94%A8%E4%BE%8B"><span class="toc-number">2.2.</span> <span class="toc-text">第二步:编写用例</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A8%A1%E6%9D%BF"><span class="toc-number">2.3.</span> <span class="toc-text">模板:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AF%A6%E7%BB%86%E7%94%A8%E4%BE%8B%E7%BA%A6%E6%9D%9F%E7%9A%84%E4%BE%8B%E5%AD%90"><span class="toc-number">2.4.</span> <span class="toc-text">详细用例约束的例子</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%87%8D%E8%A6%81%E7%8E%AF%E8%8A%82"><span class="toc-number">2.5.</span> <span class="toc-text">重要环节:</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#JS%E7%BB%84%E6%88%90"><span class="toc-number">1.</span> <span class="toc-text">JS组成</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#JS%E4%B9%A6%E5%86%99%E4%BD%8D%E7%BD%AE"><span class="toc-number"></span> <span class="toc-text">JS书写位置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#JS%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95"><span class="toc-number"></span> <span class="toc-text">JS基础语法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%98%E9%87%8F"><span class="toc-number">1.</span> <span class="toc-text">变量:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="toc-number">2.</span> <span class="toc-text">数据类型:</span></a></li></ol>
     </div>
   </section>
 
@@ -4681,7 +4682,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Hexo","url":"https://nanlingxq.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://nanlingxq.github.io/","sameAs":["https://github.com/volantis-x"],"description":"This is a rookie's Blog"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://nanlingxq.github.io/","name":"Hexo"}},{"@type":"ListItem","position":3,"item":{"@id":"https://nanlingxq.github.io/2024/09/26/软件工程学习笔记03/","name":"软件工程学习笔记03"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Hexo","url":"https://nanlingxq.github.io/","keywords":null,"description":"This is a rookie's Blog","author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://nanlingxq.github.io/","description":"This is a rookie's Blog"},"publisher":{"@type":"Organization","name":"Hexo","url":"https://nanlingxq.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://nanlingxq.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"软件工程学习笔记03","description":"This is a rookie's Blog","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https://nanlingxq.github.io/2024/09/26/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B003/"},"author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://nanlingxq.github.io/"},"publisher":{"@type":"Organization","name":"Hexo","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://nanlingxq.github.io/2024/09/26/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B003/","wordCount":0,"datePublished":"2024-09-26T08:35:21.000Z","dateModified":"2024-09-26T11:26:40.019Z","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Hexo","url":"https://nanlingxq.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://nanlingxq.github.io/","sameAs":["https://github.com/volantis-x"],"description":"This is a rookie's Blog"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://nanlingxq.github.io/","name":"Hexo"}},{"@type":"ListItem","position":3,"item":{"@id":"https://nanlingxq.github.io/2024/09/28/JavaScript学习笔记/","name":"JavaScript学习笔记"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Hexo","url":"https://nanlingxq.github.io/","keywords":null,"description":"This is a rookie's Blog","author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://nanlingxq.github.io/","description":"This is a rookie's Blog"},"publisher":{"@type":"Organization","name":"Hexo","url":"https://nanlingxq.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://nanlingxq.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"JavaScript学习笔记","description":"This is a rookie's Blog","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https://nanlingxq.github.io/2024/09/28/JavaScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"},"author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://nanlingxq.github.io/"},"publisher":{"@type":"Organization","name":"Hexo","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://nanlingxq.github.io/2024/09/28/JavaScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/","wordCount":0,"datePublished":"2024-09-28T03:14:02.292Z","dateModified":"2024-09-29T12:25:55.736Z","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
